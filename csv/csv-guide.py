@@ -23,10 +23,21 @@ READS DOC AND FORMATS EACH ROW AS A LIST
 '''
 READS DOCS IN A FOR LOOP
 '''
-# exampleFile = open(source_dir+r'\git\test-1.csv')
+# exampleFile = open(source_dir+r'\objectives.csv')
 # exampleReader = csv.reader(exampleFile)
 # for row in exampleReader:
 #     print('Row #' + str(exampleReader.line_num) + ' ' + str(row))
+    
+'''
+READ ROWS IN DOC BUT IGNORE THE HEADER
+'''
+# with open(source_dir+file_name, 'r', newline='') as read_obj:
+#     reader = csv.reader(read_obj)
+#     for row in reader:
+#         if reader.line_num == 1:
+#             continue
+#         else:
+#             print('Row #' + str(reader.line_num) + ' ' + str(row))
     
 '''
 ADDS LIST TO NEW ROW IN DOCUMENT
