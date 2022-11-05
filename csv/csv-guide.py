@@ -72,6 +72,17 @@ def append_dict_as_row(file_name, dict_of_elem, field_names):
         dict_writer = DictWriter(write_obj, fieldnames=field_names)
         # Add dictionary as wor in the csv
         dict_writer.writerow(dict_of_elem)
+        
+'''
+EXTRACTS A DICTIONARY OF A SPECIFIED COLUMN
+'''
+# with open(source_dir+file_name, 'r', newline='') as read_obj:
+#     DictReader = csv.DictReader(read_obj)
+#     for row in DictReader:
+#         print(row)
+#         date_col = {'Date': []}
+#         for record in DictReader:
+#             date_col['Date'].append(record['Date'])
 
 '''
 THIS WRITES TO DOCS BUT OVERWRITES EXISTING CONTENT
@@ -84,6 +95,18 @@ THIS WRITES TO DOCS BUT OVERWRITES EXISTING CONTENT
 # outputWriter.writerow(['lemons', 4, 1])
 # outputFile.close()
 
+'''
+COLLECTS DICTIONARIES TO A LIST WITH SPECIFIED KEY VALUES
+'''
+
+# list = []
+# def collect_dicts():
+
+#     with open(source_dir+file_name, 'r', newline='') as read_obj:
+#         DictReader = csv.DictReader(read_obj)
+#         for row in DictReader:
+#             if row['specified-key'] != 'specified-value' and row not in list:
+#                 list.append(row)
 
 
 
